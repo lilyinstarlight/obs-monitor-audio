@@ -13,7 +13,7 @@ def script_load(settings):
             monitor_source(source)
     obs.source_list_release(sources)
 
-    # connect to global 'source_show' to monitor all added sources when added to scene
+    # connect to global 'source_show' to monitor all added sources when shown
     obs.signal_handler_connect(obs.obs_get_signal_handler(), 'source_show', monitor_source_callback)
 
 
