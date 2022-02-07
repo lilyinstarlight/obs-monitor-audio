@@ -1,6 +1,6 @@
 # OBS Monitor Audio
 
-Monitor Audio is an [OBS Studio](https://obsproject.com) script that sets the audio output for all sources (current and new) to be monitored to the default audio output for the system. This is generally used in scenarios where OBS is projected onto a screen and audio is desired to be routed into the sound system the computer is connected to.
+Monitor Audio is an [OBS Studio](https://obsproject.com) script that sets the audio output for sources (current and new) to be monitored to the default audio output of the system. This is generally used in scenarios where OBS is projected onto a screen and audio is desired to be routed into the sound system the computer is connected to. Certain sources can optionally be ignored for monitoring by name.
 
 Keep the OBS "Script Log" open to confirm the sources set to monitor audio.
 
@@ -12,4 +12,4 @@ The FTC Match Uploader script requires [OBS Studio](https://obsproject.com/) and
 
 ## Usage
 
-Load `monitor-audio.py` into OBS Studio (if not already loaded). No other setup is required as this plugin will proceed to automatically monitor all current and new sources in scenes as they are staged/shown.
+Load `monitor-audio.py` into OBS Studio (if not already loaded). No other setup is required as this plugin will proceed to automatically monitor all current and new sources in scenes as they are staged/shown. Sources to ignore can be specified in a list in the script settings by source name.
